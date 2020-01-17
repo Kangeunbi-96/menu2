@@ -6,12 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body id="body">
-    <div>                
-        <input type="button" class="swap-button" value="선택된 노드 바꾸기" />
-        <input type="button" class="del-button" value="삭제" />
-    </div>
     <template id="thumbnailCategory">
         <tr>
             <td><input type="checkbox" name="" id=""></td>
@@ -19,44 +16,58 @@
             <td></td>
         </tr>
     </template>
-    <section id="sec1" class="s1">
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td><input id="overall-checkbox" type="checkbox"></td>
-                    <td>categoryNo</td>
-                    <td>name</td>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </section>
-    <section id="sec2" class="s2">
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td><input id="overall-checkbox" type="checkbox"></td>
-                    <td>categoryNo</td>
-                    <td>name</td>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </section>
-    <section id="sec3" class="s3">
-        <table border="1" class="notice-list">
-            <thead>
-                <tr>
-                    <td><input id="overall-checkbox" type="checkbox"></td>
-                    <td>categoryNo</td>
-                    <td>name</td>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </section>
+    <div class="grid_wrap">
+        <div class="grid">
+            <section id="sec1" class="s1">
+                <table class="notice-list">
+                    <thead>
+                        <tr>
+                            <td><input class="overall-checkbox" type="checkbox"></td>
+                            <td>categoryNo</td>
+                            <td>name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section id="sec2" class="s2">
+                <table class="notice-list">
+                    <thead>
+                        <tr>
+                            <td><input class="overall-checkbox" type="checkbox"></td>
+                            <td>categoryNo</td>
+                            <td>name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section id="sec3" class="s3">
+                <table class="notice-list">
+                    <thead>
+                        <tr>
+                            <td><input class="overall-checkbox" type="checkbox"></td>
+                            <td>categoryNo</td>
+                            <td>name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <div class="popup">
+        <input type="text" id="pushtext">
+        <button id="button">저장하기</button>
+    </div>
+    <div class="black_overlay"></div>
+    <div class="button_wrap">                
+        <input type="button" class="swap-button" value="선택된 노드 바꾸기" />
+        <input type="button" class="del-button" value="삭제하기" />
+        <input type="button" class="change-button" value="수정하기">
+    </div>
 </body>
 </html>
